@@ -7,6 +7,7 @@ const MovieNight = require('../models/MovieNight')
 const bodyParser = require('body-parser');
 
 router.use(bodyParser.urlencoded({ extended: true })); 
+//router.use(bodyParser.urlencoded({ extended: true })); 
 
 
 router.get('/', async (req, res) => {
