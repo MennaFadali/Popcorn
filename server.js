@@ -7,6 +7,8 @@ app.use(express.json())
 
 const create = require('./api/create')
 
+const view = require('./api/view')
+
 const db = require('./config/keys').mongoURI
 mongoose
 .connect(db,{useNewUrlParser: true})
@@ -24,6 +26,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/create', create)
+app.use('/api/view', view)
 
 app.use((req, res) => {
 
