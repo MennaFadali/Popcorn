@@ -7,6 +7,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.16.4",
     "imdb-api": "^4.0.3",
     "mon": "0.0.8",
