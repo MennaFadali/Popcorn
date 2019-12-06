@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
         <div style="padding-top: 80px;">
             <div class="container" style="float:left; margin: 300px 600px; width: 700px; padding: 0 15px;">
                 <div style="float:left">
-                    <img src="/images/popcorn_emoji.png" href="Barwa Logo" height="360px">
+                    <img src="/images/popcorn_emoji.png" href="Popcorn Emoji" height="360px">
                 </div>
                 <h3 style="color: black; margin: 0px; margin-bottom: 15px; padding-left: 365px;font-family: Geneva, Tahoma, sans-serif; font-size: 40px;">Welcome to Popcorn</h3>
                 <h3 style="color: white; margin: 0px; margin-bottom: 15px; padding-left: 365px;font-family: Geneva, Tahoma, sans-serif; font-size: 40px;margin-top: -110px; margin-left: 4px;" >Welcome to Popcorn</h3>
