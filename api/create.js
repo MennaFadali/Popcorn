@@ -7,8 +7,6 @@ const bodyParser = require("body-parser");
 
 router.use(bodyParser.urlencoded({ extended: true }));
 
-router.use(bodyParser.urlencoded({ extended: true })); 
-
 
 router.get('/', (req, res) => {
 
