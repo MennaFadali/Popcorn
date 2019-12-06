@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const dotenv = require("dotenv");
 const MongoClient = require('mongodb').MongoClient;
 const app = express()
 app.use(express.json())
@@ -9,7 +10,9 @@ app.use(express.static(__dirname+'/public')); //new
 const create = require('./api/create')
 const view = require('./api/view')
 
-const db = require('./config/keys').mongoURI
+// Connect to mongo
+dotenv.config();
+const db = process.env.mongoURI
 mongoose
 .connect(db,{useNewUrlParser: true})
 .then(() => console.log('Connected to MongoDB'))
