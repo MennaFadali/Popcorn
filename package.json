@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "imdb-api": "^4.0.3",
     "mon": "0.0.8",
     "mongoose": "^5.4.22",
     "node": "^11.12.0"

@@ -1,12 +1,11 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 router.use(express.json());
 
+const MovieNight = require("../models/MovieNight");
+const bodyParser = require("body-parser");
 
-const MovieNight = require('../models/MovieNight')
-const bodyParser = require('body-parser');
-
-router.use(bodyParser.urlencoded({ extended: true })); 
+router.use(bodyParser.urlencoded({ extended: true }));
 
 
 router.get('/', (req, res) => {
@@ -62,8 +61,6 @@ router.post('/post', async (req, res) => {
     </body>
     </html>
     `);
+});
 
-  });
-
-
-module.exports = router
+module.exports = router;
