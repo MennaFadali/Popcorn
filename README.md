@@ -10,7 +10,10 @@ Our app has the following dependencies for running (docker already handles them)
     
 **Config File:**
     We are using enviroment variable for the connection string to the database. There should be a .env file that has a body like the following:
+ 
+ ```
     mongoURI = your_connection_string
+  ```
   
 **Docker:**
     We are using docker to isolate our app from the environment it is running on, and to install the dependencies that we define in the package.json for us and install node in the image it creates.
