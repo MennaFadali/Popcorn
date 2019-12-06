@@ -13,7 +13,14 @@ Config File:
     mongoURI = your_connection_string
   
 Docker:
-    We are using docker to isolate our app from the environment it is running on, and to install the dependencies that we define in the package.json for us and install node in the image it creates. To run the web app simply run "docker run" command.
+    We are using docker to isolate our app from the environment it is running on, and to install the dependencies that we define in the package.json for us and install node in the image it creates.
+To run the web app:
+
+1. Build an image by running the following command : 
+            docker build -t <image-name> .
+2. Run the Container for the image + map the docker port to the port the server is using throught the following command :
+            sudo docker run -p 3000:3000 <image-name>
     
 Docker Compose:
-    We used docker compose to define and configure our application’s services. 
+    We used docker compose to define and configure our application’s services. To run the web app using this option after adding the connection String of the database to the .env file, run the following command: 
+            sudo docker-compose up
