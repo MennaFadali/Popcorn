@@ -2,11 +2,11 @@
 This is a web app that is used to organise movie nights! You can either create a movie night at your place, or join one by contacting the host using the given phone number.
 
 Our app has the following dependencies for running (docker already handles them):
-    "jest": "^24.7.1" 
-    "nodemon": "^1.18.11" 
-    "react": "^16.8.6" 
-    "react-dom": "^16.8.6" 
-    "standard": "^12.0.1" 
+    "express": "^4.16.4",
+    "imdb-api": "^4.0.3",
+    "mon": "0.0.8",
+    "mongoose": "^5.4.22",
+    "node": "^11.12.0"
     
 Config File:
     We are using enviroment variable for the connection string to the database. There should be a .env file that has a body like the following:
